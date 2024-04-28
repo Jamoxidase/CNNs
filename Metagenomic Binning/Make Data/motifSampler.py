@@ -58,7 +58,7 @@ for each read:
 
 # for very large reads, we can probably use smaller samples
 
-class ClusterK:
+class Features:
     def __init__(self, path):
         
         thisReader=FastAreader(path)
@@ -94,12 +94,9 @@ class ClusterK:
                 file.write('\n')
 
 
-
 def main():
     path = '/Users/jlarbale/Desktop/clusterKdata/codeBase/testReads.txt'
-    clusterK = ClusterK(path)
+    clusterK = Features(path)
     clusterK.sampleMotifs('')
-
-
 if __name__ == '__main__':
     main()
